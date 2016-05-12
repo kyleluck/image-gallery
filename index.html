@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Gallery</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/img1.jpg" alt="image one" onmouseover="document.getElementById('bigimage').src='images/img1.jpg';">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/img2.jpg" alt="image two" onmouseover="document.getElementById('bigimage').src='images/img2.jpg';">
+          </a>
+        </div>
+        <div class="clearfix visible-sm-block visible-xs-block"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/img3.jpg" alt="image three" onmouseover="document.getElementById('bigimage').src='images/img3.jpg';">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/img4.jpg" alt="image four" onmouseover="document.getElementById('bigimage').src='images/img4.jpg';">
+          </a>
+        </div>
+      </div> <!-- end row -->
+
+      <div class="row">
+        <div class="col-xs-12 hidden-xs">
+          <img src="images/img1.jpg" alt="big image" id="bigimage" class="img-responsive">
+        </div>
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
